@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1410555314 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\board\board.cpp
+	"Board.h"
+	<iostream>
+	<cstdlib>
+
+1410555178 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\board.h
+
+1410555423 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\main.cpp
+	"Board.h"
+	<iostream>
+
