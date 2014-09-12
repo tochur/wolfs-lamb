@@ -1,13 +1,14 @@
 #include "Board.h"
+#include "Field.h"
 #include<iostream>
 #include<cstdlib>
 
 using namespace std;
 
 Board::Board(){
-    fields = new int*[64];
+    fields = new Field*[64];
 	for(int i = 0; i<64;i++){
-		fields[i] = new int(i);
+		fields[i] = new Field(i);
 	}
 }
 
@@ -42,7 +43,7 @@ void Board::print(){
 	int i = 56;
 	while(i>=0){
 		for(int j = 0;j<8;j++){
-			cout<<*fields[i+j];
+			cout<<fields[i+j]->getPionSymbol();
 		}
 		cout<<endl;
 		i-=8;
