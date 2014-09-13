@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1410611589 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\board\board.cpp
+1410613198 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\board\board.cpp
 	"Board.h"
 	"Field.h"
+	"Pion.h"
 	<iostream>
 	<cstdlib>
 
@@ -12,34 +13,38 @@
 	"Controller.h"
 	<iostream>
 
-1410610623 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\field\field.cpp
+1410612851 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\field\field.cpp
 	"Field.h"
 	"Wolf.h"
+	"Lamb.h"
+	<iostream>
 
 1410612002 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\field.h
 	"Pion.h"
 
-1410601459 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\pion.h
+1410613621 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\pion.h
 
-1410609958 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\wolf.h
+1410613597 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\wolf.h
 	<Pion.h>
 
-1410563463 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\pion.cpp
+1410613656 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\pion.cpp
 	"Pion.h"
+	"Field.h"
+	<iostream>
 
-1410610320 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\wolf.cpp
+1410612608 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\wolf.cpp
 	"Wolf.h"
 	"Field.h"
 	<iostream>
 
-1410602364 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\lamb.cpp
+1410612631 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\lamb.cpp
 	"Lamb.h"
 	<iostream>
 
-1410602392 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\lamb.h
+1410612871 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\lamb.h
 	<Pion.h>
 
-1410610044 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\controller\controller.cpp
+1410612835 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\controller\controller.cpp
 	"Controller.h"
 	<iostream>
 

@@ -1,5 +1,6 @@
 #include "Board.h"
 #include "Field.h"
+#include "Pion.h"
 #include<iostream>
 #include<cstdlib>
 
@@ -21,11 +22,10 @@ Board::~Board(){
 /**********/
 bool Board::makeMove(int x, int y, int x1, int y1){
     cout<<"Board::makeMove()"<<endl;
-   // if ( fields[y*8+x]->pion->makeMove(x1,y1,fields) ){
-        changeView(x,y,x1,y1);
-        return 0;
-   // }
-	return 1;
+    if ( fields[y*8+x]->pion->makeMove(x1,y1,fields) )
+        return 1;
+    changeView(x,y,x1,y1);
+    return 0;
 }
 
 void Board::changeView(int x, int y, int newX, int newY){
@@ -39,7 +39,7 @@ void Board::changeView(int x, int y, int newX, int newY){
 
 void Board::print(){
     cout<<"Board::print()"<<endl;
-	system ("cls");
+	//system ("cls");
 	int i = 56;
 	while(i>=0){
 		for(int j = 0;j<8;j++){
