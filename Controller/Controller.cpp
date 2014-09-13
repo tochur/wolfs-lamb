@@ -18,7 +18,6 @@ void Controller::getMove(){
     newX = getCoordinate();
     cout<<"Podaj wspolrzedna pionka (newY)"<<endl;
     newY = getCoordinate();
-
 }
 
 void Controller::nextMove(){
