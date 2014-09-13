@@ -9,7 +9,6 @@ class Lamb : public Pion
     public:
         Lamb(int x, int y, int signature = 1);
         virtual ~Lamb();
-        bool makeMove(int x, int y, Field** &board);
         bool checkMove(int x, int y, const Field** &board);
     protected:
     private:

@@ -5,7 +5,7 @@
 using namespace std;
 
 Wolf::Wolf(int x, int y, int signature):Pion(x,y,signature){
-    cout<<"Wolf construktor"<<endl;
+    cout<<"Wolf constructor"<<endl;
 }
 
 Wolf::~Wolf(){

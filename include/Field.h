@@ -11,7 +11,6 @@ class Field{
         Pion *pion;
     protected:
     private:
-
         int x, y;
         bool color;
         int signature;
