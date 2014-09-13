@@ -6,7 +6,6 @@
 using namespace std;
 
 Field::Field(int nrPola){
-    cout<<"Field Constructor"<<endl;
     signature = fitPion(nrPola);
     x = nrPola%8;
 	y = (nrPola-x)/8;
@@ -24,7 +23,7 @@ Field::Field(int nrPola){
 }
 
 Field::~Field(){
-    //Trzeba dopisaæ, jak uzupe³nie siê PION*
+    delete pion;
 }
 
 int Field::fitPion(int nrPola){

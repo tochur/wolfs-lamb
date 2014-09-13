@@ -19,7 +19,7 @@
 	"Lamb.h"
 	<iostream>
 
-1410612002 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\field.h
+1410615072 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\field.h
 	"Pion.h"
 
 1410613621 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\pion.h
@@ -32,16 +32,16 @@
 	"Field.h"
 	<iostream>
 
-1410612608 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\wolf.cpp
+1410613689 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\wolf.cpp
 	"Wolf.h"
 	"Field.h"
 	<iostream>
 
-1410612631 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\lamb.cpp
+1410614691 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\lamb.cpp
 	"Lamb.h"
 	<iostream>
 
-1410612871 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\lamb.h
+1410614677 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\lamb.h
 	<Pion.h>
 
 1410612835 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\controller\controller.cpp

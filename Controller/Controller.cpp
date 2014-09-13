@@ -9,13 +9,14 @@ Controller::Controller(){
 Controller::~Controller(){}
 
 void Controller::getMove(){
-    cout<<"Podaj wspó³rzêdn¹ pionka (x)"<<endl;
+    cout<<"*** NEXT MOVE ***"<<endl;
+    cout<<"Podaj wspolrzedna pionka (x)"<<endl;
     cin>>this->x;
-    cout<<"Podaj wspó³rzêdn¹ pionka (y)"<<endl;
+    cout<<"Podaj wspolrzedna pionka (y)"<<endl;
     cin>>this->y;
-    cout<<"Podaj wspó³rzêdn¹ pionka (newX)"<<endl;
+    cout<<"Podaj wspolrzedna pionka (newX)"<<endl;
     cin>>this->newX;
-    cout<<"Podaj wspó³rzêdn¹ pionka (newY)"<<endl;
+    cout<<"Podaj wspolrzedna pionka (newY)"<<endl;
     cin>>this->newY;
 
 }
@@ -23,7 +24,6 @@ void Controller::getMove(){
 void Controller::nextMove(){
     int check;
     do{
-        cout<<"Controller::nextMove()"<<endl;
         board.print();
         getMove();
         check = board.makeMove(x,y,newX,newY);
