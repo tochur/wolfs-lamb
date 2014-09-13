@@ -35,12 +35,16 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Board/Board.cpp" />
+		<Unit filename="Controller/Controller.cpp" />
 		<Unit filename="field/Field.cpp" />
 		<Unit filename="include/Board.h" />
+		<Unit filename="include/Controller.h" />
 		<Unit filename="include/Field.h" />
+		<Unit filename="include/Lamb.h" />
 		<Unit filename="include/Pion.h" />
 		<Unit filename="include/Wolf.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="pions/Lamb.cpp" />
 		<Unit filename="pions/Pion.cpp" />
 		<Unit filename="pions/Wolf.cpp" />
 		<Extensions>

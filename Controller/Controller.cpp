@@ -23,6 +23,7 @@ void Controller::getMove(){
 void Controller::nextMove(){
     int check;
     do{
+        cout<<"Controller::nextMove()"<<endl;
         board.print();
         getMove();
         check = board.makeMove(x,y,newX,newY);

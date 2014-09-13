@@ -20,14 +20,16 @@ Board::~Board(){
 }
 /**********/
 bool Board::makeMove(int x, int y, int x1, int y1){
-    if ( fields[y*8+y]->pion->makeMove(x1,y1,fields) ){
+    cout<<"Board::makeMove()"<<endl;
+   // if ( fields[y*8+x]->pion->makeMove(x1,y1,fields) ){
         changeView(x,y,x1,y1);
         return 0;
-    }
+   // }
 	return 1;
 }
 
 void Board::changeView(int x, int y, int newX, int newY){
+    cout<<"Board::changeView():"<<endl;
     Field *oldField = fields[y*8 + x];
     Field *newField = fields[newY*8 + newX];
     int signature = oldField->getPionSignature();
@@ -36,6 +38,7 @@ void Board::changeView(int x, int y, int newX, int newY){
 }
 
 void Board::print(){
+    cout<<"Board::print()"<<endl;
 	system ("cls");
 	int i = 56;
 	while(i>=0){
