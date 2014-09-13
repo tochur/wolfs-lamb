@@ -13,6 +13,7 @@ class Controller
         Board board;
         int x, y, newX, newY;
         void getMove();
+        int getCoordinate();
 };
 
 #endif // CONTROLLER_H

@@ -11,13 +11,13 @@ Controller::~Controller(){}
 void Controller::getMove(){
     cout<<"*** NEXT MOVE ***"<<endl;
     cout<<"Podaj wspolrzedna pionka (x)"<<endl;
-    cin>>this->x;
+    x = getCoordinate();
     cout<<"Podaj wspolrzedna pionka (y)"<<endl;
-    cin>>this->y;
+    y = getCoordinate();
     cout<<"Podaj wspolrzedna pionka (newX)"<<endl;
-    cin>>this->newX;
+    newX = getCoordinate();
     cout<<"Podaj wspolrzedna pionka (newY)"<<endl;
-    cin>>this->newY;
+    newY = getCoordinate();
 
 }
 
@@ -30,3 +30,12 @@ void Controller::nextMove(){
     }while(!check);
 }
 
+int Controller::getCoordinate(){
+    int x;
+    while(1){
+        cin>>x;
+        if(x<8 && x>=0)
+            return x;
+        cout<<"Wrong Coordinate. It must be between 0-7"<<endl;
+    }
+}

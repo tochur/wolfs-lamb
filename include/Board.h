@@ -13,6 +13,7 @@ class Board
     private:
         Field **fields;
         void changeView(int x, int y, int x1, int y1);
+        int checkMove(int x, int y, int newX, int newY);
 };
 
 #endif // BOARD_H

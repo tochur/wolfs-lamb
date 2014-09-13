@@ -20,5 +20,7 @@ bool Pion::makeMove(int x, int y, Field** &board){
 
     board[newFieldNo]->pion = board[fieldNo]->pion;
     board[fieldNo]->pion = 0;
+    this->x = x;
+    this->y = y;
     return 0;
 }

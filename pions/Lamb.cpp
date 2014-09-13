@@ -1,5 +1,6 @@
 #include "Lamb.h"
 #include<iostream>
+#include<cmath>
 
 using namespace std;
 
@@ -12,5 +13,8 @@ Lamb::~Lamb(){
 }
 
 bool Lamb::checkMove(int x, int y, const Field** &board){
-    return 0;
+    if ( abs(x - this->x) == 1 && abs(y - this->y) == 1 )
+        return 0;
+    cout<<"Wrong Lamb move"<<endl;
+    return 1;
 }
