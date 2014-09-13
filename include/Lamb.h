@@ -1,0 +1,18 @@
+#ifndef LAMB_H
+#define LAMB_H
+
+#include <Pion.h>
+
+
+class Lamb : public Pion
+{
+    public:
+        Lamb(int x, int y, int signature);
+        virtual ~Lamb();
+        bool makeMove(int x, int y, Field** &board);
+        bool checkMove(int x, int y, const Field** &board);
+    protected:
+    private:
+};
+
+#endif // LAMB_H

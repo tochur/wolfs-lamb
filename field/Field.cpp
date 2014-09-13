@@ -1,12 +1,23 @@
-#include "Field.h"
+#include"Field.h"
+#include"Wolf.h"
 
 using namespace std;
 
 Field::Field(int nrPola){
-    pion = fitPion(nrPola);
+    signature = fitPion(nrPola);
     x = nrPola%8;
 	y = (nrPola-x)/8;
 	color = (x == y || ((x%2 == 0) == (y%2 == 0)));
+	switch(signature){
+        case 1:
+            pion = 0;
+            break;
+        case 2:
+            pion = new Wolf(x,y);
+            break;
+        default:
+            pion = 0;
+	}
 }
 
 Field::~Field(){
@@ -21,6 +32,10 @@ int Field::fitPion(int nrPola){
     return 0;
 }
 
- int Field::getPionSymbol(){
-        return pion;
+ int Field::getPionSignature(){
+        return signature;
+ }
+
+ void Field::setPionSignature(int signature){
+    this->signature = signature;
  }

@@ -19,34 +19,30 @@ Board::~Board(){
 	delete fields;
 }
 /**********/
-bool Board::makeMove(int x, int y, int x1, int y1){	//czy w planczy, czy pionek
-	/*Pole *beg = plansza[8*(y)+x];
-	Pole *end = plansza[8*(y1)+x1];
-	bool z = beg->pion->checkMove(x1,y1,plansza);		//0 jeœli poprawny
-	if(!z){
-		cout<<"Poprawny ruch "<<z<<endl;
-		end->typ= beg->typ;
-		beg->typ = 0;
-
-		if(end != 0)
-			delete end->pion;
-		end->pion = beg->pion;
-		beg->pion = 0;
-
-	} */
-    cout<<"Not suported yet"<<endl;
+bool Board::makeMove(int x, int y, int x1, int y1){
+    if ( fields[y*8+y]->pion->makeMove(x1,y1,fields) ){
+        changeView(x,y,x1,y1);
+        return 0;
+    }
 	return 1;
 }
-/**********/
+
+void Board::changeView(int x, int y, int newX, int newY){
+    Field *oldField = fields[y*8 + x];
+    Field *newField = fields[newY*8 + newX];
+    int signature = oldField->getPionSignature();
+    newField->setPionSignature(signature);
+    oldField->setPionSignature(0);
+}
+
 void Board::print(){
-	system("clear");
+	system ("cls");
 	int i = 56;
 	while(i>=0){
 		for(int j = 0;j<8;j++){
-			cout<<fields[i+j]->getPionSymbol();
+			cout<<fields[i+j]->getPionSignature();
 		}
 		cout<<endl;
 		i-=8;
 	}
 }
-

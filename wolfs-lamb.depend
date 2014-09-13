@@ -1,18 +1,47 @@
 # depslib dependency file v1.0
-1410555442 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\board\board.cpp
+1410604094 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\board\board.cpp
 	"Board.h"
+	"Field.h"
 	<iostream>
 	<cstdlib>
 
-1410557766 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\board.h
+1410608558 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\board.h
 	"Field.h"
 
-1410555423 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\main.cpp
-	"Board.h"
+1410603635 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\main.cpp
+	"Controller.h"
 	<iostream>
 
-1410557590 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\field\field.cpp
+1410608932 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\field\field.cpp
+	"Field.h"
+	"Wolf.h"
+
+1410608897 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\field.h
+	"Pion.h"
+
+1410601459 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\pion.h
+
+1410563500 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\wolf.h
+	<Pion.h>
+
+1410563463 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\pion.cpp
+	"Pion.h"
+
+1410604361 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\wolf.cpp
+	"Wolf.h"
 	"Field.h"
 
-1410557831 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\field.h
+1410602364 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\lamb.cpp
+	"Lamb.h"
+	<iostream>
+
+1410602392 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\lamb.h
+	<Pion.h>
+
+1410606493 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\controller\controller.cpp
+	"Controller.h"
+	<iostream>
+
+1410608256 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\controller.h
+	"Board.h"
 

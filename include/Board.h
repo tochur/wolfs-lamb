@@ -12,6 +12,7 @@ class Board
     protected:
     private:
         Field **fields;
+        void changeView(int x, int y, int x1, int y1);
 };
 
 #endif // BOARD_H
