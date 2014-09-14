@@ -5,13 +5,14 @@
 class Controller
 {
     public:
-        Controller();
+        Controller(int turn = 0);
         ~Controller();
         void nextMove();
     protected:
     private:
         Board board;
         int x, y, newX, newY;
+        int turn;
         void getMove();
         int getCoordinate();
 };

@@ -20,8 +20,8 @@ Board::~Board(){
 	delete fields;
 }
 /**********/
-bool Board::makeMove(int x, int y, int x1, int y1){
-    if ( checkMove(x,y,x1,y1) || fields[y*8+x]->pion->makeMove(x1,y1,fields) )
+bool Board::makeMove(int x, int y, int x1, int y1, bool turn){
+    if ( checkMove(x,y,x1,y1,turn) || fields[y*8+x]->pion->makeMove(x1,y1,fields) )
         return 1;
     changeView(x,y,x1,y1);
     return 0;
@@ -47,14 +47,28 @@ void Board::print(){
 	}
 }
 
-int Board::checkMove(int x, int y, int newX, int newY){
+int Board::checkMove(int x, int y, int newX, int newY, bool turn){
     int checker = 0;
     //****Is a pion on the field ****//
     if(fields[y*8+x]->getPionSignature() == 0){
         cout<<"You didn't chose a pion"<<endl;
         return ++checker;
     }
-    //****New field engaged***//
+        //****Is it your turn***//
+    switch(turn){
+    case 0: //wolf
+        if (fields[y*8+x]->getPionSignature() != 2){
+            cout<<"It is not your turn"<<endl;
+            return ++checker;
+        }
+        break;
+    case 1: //lamb
+         if (fields[y*8+x]->getPionSignature() != 1){
+            cout<<"It is not your turn"<<endl;
+            return ++checker;
+        }
+    }
+    //****Field engaged***//
     if(fields[newY*8+newX]->getPionSignature() != 0){
         cout<<"Wrong move, you can not take occupied field"<<endl;
         return ++checker;

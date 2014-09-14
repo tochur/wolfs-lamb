@@ -3,30 +3,31 @@
 
 using namespace std;
 
-Controller::Controller(){
-}
+Controller::Controller(int turn):turn(turn){}
 
 Controller::~Controller(){}
 
 void Controller::getMove(){
     cout<<"*** NEXT MOVE ***"<<endl;
-    cout<<"Podaj wspolrzedna pionka (x)"<<endl;
+    cout<<"Type coordinate of pawn (x)"<<endl;
     x = getCoordinate();
-    cout<<"Podaj wspolrzedna pionka (y)"<<endl;
+    cout<<"Type coordinate of pawn (y)"<<endl;
     y = getCoordinate();
-    cout<<"Podaj wspolrzedna pionka (newX)"<<endl;
+    cout<<"Type coordinate of pawn (newX)"<<endl;
     newX = getCoordinate();
-    cout<<"Podaj wspolrzedna pionka (newY)"<<endl;
+    cout<<"Type coordinate of pawn (newY)"<<endl;
     newY = getCoordinate();
 }
 
 void Controller::nextMove(){
     int check;
+    turn++;
+    turn = turn%2;
     do{
         board.print();
         getMove();
-        check = board.makeMove(x,y,newX,newY);
-    }while(!check);
+        check = board.makeMove(x,y,newX,newY,turn);
+    }while(check);
 }
 
 int Controller::getCoordinate(){
