@@ -2,6 +2,8 @@
 #define BOARD_H
 #include"Field.h"
 
+class MoveChecker;
+class GameController;
 class Player;
 class Board
 {
@@ -14,7 +16,10 @@ class Board
     private:
         Field **fields;
         void changeView(int x, int y, int x1, int y1);
+        int getFieldSignature(int y,int x);
     friend Player;
+    friend GameController;
+    friend MoveChecker;
 };
 
 #endif // BOARD_H

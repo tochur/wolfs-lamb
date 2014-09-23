@@ -7,7 +7,7 @@ class MoveChecker
     public:
         MoveChecker(Board* board);
         ~MoveChecker();
-        bool isCorrect(int x, int y, int newX, int newY);
+        bool isCorrect(int x, int y, int newX, int newY,int color);
     protected:
     private:
         Board* board;

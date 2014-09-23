@@ -1,13 +1,13 @@
 # depslib dependency file v1.0
-1411466152 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\board\board.cpp
+1411469466 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\board\board.cpp
 	<iostream>
 	"Board.h"
 	"Field.h"
 
-1411466061 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\board.h
+1411472185 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\board.h
 	"Field.h"
 
-1411384486 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\main.cpp
+1411466935 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\main.cpp
 	"Game.h"
 	<iostream>
 
@@ -20,64 +20,65 @@
 1411381464 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\field.h
 	"Pion.h"
 
-1411381464 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\pion.h
+1411479236 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\pion.h
 
-1411381464 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\wolf.h
+1411479258 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\wolf.h
 	<Pion.h>
 
-1411381464 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\pion.cpp
+1411477739 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\pion.cpp
 	"Pion.h"
 	"Field.h"
 	<iostream>
 
-1411381464 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\wolf.cpp
+1411479292 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\wolf.cpp
 	"Wolf.h"
 	"Field.h"
 	<iostream>
 
-1411381464 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\lamb.cpp
+1411483989 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\pions\lamb.cpp
 	"Lamb.h"
 	<iostream>
 	<cmath>
 
-1411381464 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\lamb.h
+1411479161 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\lamb.h
 	<Pion.h>
 
-1411388941 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\controller\controller.cpp
+1411466935 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\controller\controller.cpp
 	"Controller.h"
 	<iostream>
 
 1411381464 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\controller.h
 	"Board.h"
 
-1411393178 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\controller\gamecontroller.cpp
+1411501730 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\controller\gamecontroller.cpp
 	"GameController.h"
 	<iostream>
 
-1411392814 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\gamecontroller.h
+1411478358 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\gamecontroller.h
 	"Board.h"
 	"Player.h"
 
-1411466012 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\player.h
+1411466935 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\player.h
 	"MoveChecker.h"
 
-1411391657 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\movechecker.h
+1411472095 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\movechecker.h
 	"Board.h"
 
-1411391738 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\controller\movechecker.cpp
+1411501463 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\controller\movechecker.cpp
 	"MoveChecker.h"
+	<iostream>
 
-1411465987 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\game\game.cpp
+1411466935 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\game\game.cpp
 	<iostream>
 	"Game.h"
 
-1411391821 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\game.h
+1411466935 c:\users\bjhj\documents\repozytoria\wolfs-lamb\include\game.h
 	"Player.h"
 	"GameController.h"
 	"MoveChecker.h"
 	"Board.h"
 
-1411466040 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\player\player.cpp
+1411484243 source:c:\users\bjhj\documents\repozytoria\wolfs-lamb\player\player.cpp
 	"Player.h"
 	"MoveChecker.h"
 	<iostream>

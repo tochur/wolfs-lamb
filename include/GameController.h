@@ -11,11 +11,14 @@ class GameController
         void start();
     protected:
     private:
-        int x, y, newX, newY, turn;
+        int x, y, newX, newY;
+        int turn;
         Board* board;
         Player** players;
         bool isGameOver();
         bool nextMove();
+        bool fieldBelongsToBoard(int y, int x);
+        bool isFieldEmpty(int y, int x);
         void getCoordinates();
         int getCoordinate();
 };

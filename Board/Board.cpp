@@ -37,3 +37,7 @@ void Board::changeView(int x, int y, int newX, int newY){
     fields[newY * 8 + newX]->setPionSignature(oldSignature);
     fields[y*8 + x]->setPionSignature(0);
 }
+
+int Board::getFieldSignature(int y,int x){
+        return fields[y * 8 + x]->getPionSignature();
+}

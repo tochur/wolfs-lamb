@@ -6,7 +6,7 @@ class Pion{
     public:
         Pion(int x, int y, int signature = 0);
         virtual ~Pion();
-        virtual bool checkMove(int x, int y, const Field** &board) = 0;
+        virtual bool checkMove(int x, int y) = 0;
         virtual bool makeMove(int x, int y, Field** &board);
         int getSignature();
     protected:

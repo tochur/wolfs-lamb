@@ -8,7 +8,7 @@ class Wolf : public Pion{
     public:
         Wolf(int x,int y,int signature = 2);
         virtual ~Wolf();
-        bool checkMove(int x, int y, const Field** &board);
+        bool checkMove(int x, int y);
     protected:
     private:
 };

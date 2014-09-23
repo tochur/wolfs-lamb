@@ -12,7 +12,9 @@ Lamb::~Lamb(){
     cout<<"Lamb destructor"<<endl;
 }
 
-bool Lamb::checkMove(int x, int y, const Field** &board){
+bool Lamb::checkMove(int x, int y){
+    cout<<"Lamb coordinates"<<this->x<<this->y<<endl;
+    cout<<x<<y<<endl;
     if ( abs(x - this->x) == 1 && abs(y - this->y) == 1 )
         return 0;
     cout<<"Wrong Lamb move"<<endl;

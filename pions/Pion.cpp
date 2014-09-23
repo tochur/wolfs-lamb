@@ -13,8 +13,6 @@ int Pion::getSignature(){
 }
 
 bool Pion::makeMove(int x, int y, Field** &board){
-    if( checkMove(x, y, (const Field**&)board) )
-        return 1;
     int fieldNo = this->y*8 + this->x;
     int newFieldNo = y*8 + x;
 
