@@ -3,9 +3,9 @@
 
 using namespace std;
 
-Controller::Controller(int turn):turn(turn){}
+//Controller::Controller(int turn):turn(turn){}
 
-Controller::~Controller(){}
+//Controller::~Controller(){}
 
 void Controller::getMove(){
     cout<<"*** NEXT MOVE ***"<<endl;
@@ -24,9 +24,9 @@ void Controller::nextMove(){
     turn++;
     turn = turn%2;
     do{
-        board.print();
+//        board.print();
         getMove();
-        check = board.makeMove(x,y,newX,newY,turn);
+//        check = board.makeMove(x,y,newX,newY,turn);
     }while(check);
 }
 

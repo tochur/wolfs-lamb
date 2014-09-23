@@ -2,6 +2,7 @@
 #define BOARD_H
 #include"Field.h"
 
+class Player;
 class Board
 {
     public:
@@ -13,7 +14,7 @@ class Board
     private:
         Field **fields;
         void changeView(int x, int y, int x1, int y1);
-        int checkMove(int x, int y, int newX, int newY, bool turn);
+    friend Player;
 };
 
 #endif // BOARD_H
