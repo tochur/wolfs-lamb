@@ -2,6 +2,7 @@
 #define FIELD_H
 #include"Pion.h"
 
+class Board;
 class Field{
     public:
         Field(int nrPola);
@@ -12,9 +13,13 @@ class Field{
     protected:
     private:
         int x, y;
+        char appearance;
         bool color;
         int signature;
         int fitPion(int i);
-
+        char fitAppearance(int nrPola);
+        char getFieldAppearance();
+        void setFieldAppearance(char symbol);
+    friend Board;
 };
 #endif // FIELD_H

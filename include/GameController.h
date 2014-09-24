@@ -21,6 +21,7 @@ class GameController
         bool isFieldEmpty(int y, int x);
         void getCoordinates();
         int getCoordinate();
+        void appointTurn(int& turn);
 };
 
 #endif // GAMECONTROLLER_H

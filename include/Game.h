@@ -11,7 +11,6 @@ class Game
         Game();
         ~Game();
         void start();
-        bool isGameOver();
     protected:
     private:
         Player* players[2];

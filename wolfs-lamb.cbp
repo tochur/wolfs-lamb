@@ -35,7 +35,6 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Board/Board.cpp" />
-		<Unit filename="Controller/Controller.cpp" />
 		<Unit filename="Controller/GameController.cpp" />
 		<Unit filename="Controller/MoveChecker.cpp" />
 		<Unit filename="Game/Game.cpp" />
